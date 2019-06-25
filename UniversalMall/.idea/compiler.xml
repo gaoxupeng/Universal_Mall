@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UniversalMall" />
+        <module name="mall-api" />
+        <module name="mall-eureka-8001" />
+        <module name="mall-hystrix-dashboard-8002" />
+        <module name="mall-login-8010" />
+        <module name="mall-login-customer-8011" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="8001" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

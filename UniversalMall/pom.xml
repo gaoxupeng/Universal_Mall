@@ -6,7 +6,20 @@
 
     <groupId>com.mall</groupId>
     <artifactId>UniversalMall</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    
+
+
+
+
+    <modules>
+        <module>mall-eureka-8001</module>
+        <module>mall-login-8010</module>
+        <module>mall-api</module>
+        <module>mall-hystrix-dashboard-8002</module>
+        <module>mall-login-customer-8011</module>
+    </modules>
+
+
 </project>

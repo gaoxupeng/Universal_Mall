@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mall-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-api/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-eureka-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-eureka-8001/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-hystrix-dashboard-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-login-8010" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-login-customer-8011" charset="UTF-8" />
+  </component>
+</project>

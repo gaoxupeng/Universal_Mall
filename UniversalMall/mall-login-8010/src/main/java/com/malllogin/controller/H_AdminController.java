@@ -9,39 +9,47 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Random;
 
+@SuppressWarnings("ALL")
 @RestController
 public class H_AdminController {
 
+    @SuppressWarnings("AlibabaLowerCamelCaseVariableNaming")
     @Autowired
-    private H_AdminService h_adminService;
+    private H_AdminService h_AdminService;
 
+    /**
+     * 查询所有用户
+     * @param example
+     * @return
+     */
     @RequestMapping("/getAllUser")
     public List<H_Admin> getAllUser(H_AdminExample example) {
-        List<H_Admin> adminList= h_adminService.getAllUser(example);
+        List<H_Admin> adminList= h_AdminService.getAllUser(example);
         return adminList;
     }
 
+    /**
+     * 根据ID查询用户
+     * @param id
+     * @return
+     */
+    @SuppressWarnings("AlibabaLowerCamelCaseVariableNaming")
     @RequestMapping("/getHadmin")
     public H_Admin getHadmin(long id){
-        H_Admin h_admin = h_adminService.getHadmin(id);
-        return h_admin;
+        H_Admin h_Admin = h_AdminService.getHadmin(id);
+        return h_Admin;
     }
 
-    @RequestMapping("/hello")
-    public String hello(){
-        return "hello word";
-    }
-
-    @RequestMapping("/ceshi")
-    public int ceshi(){
-        int num = 0;
-        int min = 50;
-        int max = 100;
-        for(int i=0;i<1;i++){
-           num = new Random().nextInt(max-min)+min;
-        }
-        return num;
+    /**
+     * 登录验证
+     * @param userName
+     * @param passWord
+     * @return
+     */
+    @RequestMapping("/doLogin")
+    public int doLogin(String userName,String passWord){
+        int a = h_AdminService.doLogin(userName,passWord);
+        return a;
     }
 }

@@ -13,6 +13,8 @@ eureka:
 spring:
   application:
     name: login-customer
+  thymeleaf:
+    prefix: classpath:/templates/
 
 feign:
   hystrix:
@@ -24,7 +26,6 @@ hystrix:
       execution:
         timeout:
           enabled: false #关闭熔断器超时检测时间功能，也就是不超时
-
 
 
 

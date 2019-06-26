@@ -28,6 +28,11 @@ public class H_AdminFallbackFactory implements FallbackFactory<H_AdminService> {
             public String hello() {
                 return "hellO";
             }
+
+            @Override
+            public int doLogin(String userName, String passWord) {
+                return 0;
+            }
         };
     }
 }

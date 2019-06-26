@@ -17,4 +17,6 @@ public interface H_AdminService {
 
 
     public String hello();
+
+    public int doLogin(String userName,String passWord);
 }

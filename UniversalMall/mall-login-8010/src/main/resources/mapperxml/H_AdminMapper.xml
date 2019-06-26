@@ -287,4 +287,7 @@
       status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <select id="selectIsUser" resultType="int">
+    select count(*) from h_admin where username = #{userName,jdbcType=VARCHAR} and password = #{passWord,jdbcType=VARCHAR};
+  </select>
 </mapper>

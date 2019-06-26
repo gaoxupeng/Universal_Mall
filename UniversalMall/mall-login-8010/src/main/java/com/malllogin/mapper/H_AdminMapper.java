@@ -31,4 +31,6 @@ public interface H_AdminMapper {
     int updateByPrimaryKeySelective(H_Admin record);
 
     int updateByPrimaryKey(H_Admin record);
+
+    int selectIsUser(@Param("userName")String userName,@Param("passWord")String passWord);
 }

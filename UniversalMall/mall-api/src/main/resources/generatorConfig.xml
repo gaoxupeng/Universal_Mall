@@ -24,7 +24,7 @@
         </jdbcConnection>
 
         <!--生成的model 包路径 -->
-        <javaModelGenerator targetPackage="com.api.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.login.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="ture"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -35,7 +35,7 @@
         </sqlMapGenerator>
 
         <!-- 生成的Dao接口 的包路径 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.api.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.login.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="ture"/>
         </javaClientGenerator>
 

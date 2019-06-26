@@ -18,18 +18,25 @@ public class H_AdminServiceImpl implements H_AdminService {
     private H_AdminMapper h_adminMapper;
 
 
+    @Override
     public List<H_Admin> getAllUser(H_AdminExample example) {
         List<H_Admin> adminList= h_adminMapper.selectByExample(example);
         return adminList;
     }
 
-
+    @Override
     public H_Admin getHadmin(long id){
         H_Admin h_admin = h_adminMapper.selectByPrimaryKey(id);
         return h_admin;
     }
-
+    @Override
     public String hello(){
         return "hello word";
+    }
+
+    @Override
+    public int doLogin(String userName, String passWord) {
+        int a = h_adminMapper.selectIsUser(userName,passWord);
+        return a;
     }
 }

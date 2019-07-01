@@ -5,11 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-login-8010/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-eureka-8001/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-login-customer-8011/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-api/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-hystrix-dashboard-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_login/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_api/pom.xml" />
+        <option value="$PROJECT_DIR$/c_login/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

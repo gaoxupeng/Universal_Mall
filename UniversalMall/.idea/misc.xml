@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/mall_api/pom.xml" />
         <option value="$PROJECT_DIR$/c_login/pom.xml" />
         <option value="$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_zuul/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

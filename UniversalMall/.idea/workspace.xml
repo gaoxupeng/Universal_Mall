@@ -19,6 +19,10 @@
     <ignored path="$PROJECT_DIR$/c_login/target/" />
     <ignored path="$PROJECT_DIR$/mall_hystrix_dashboard/target/" />
     <ignored path="$PROJECT_DIR$/mall_zuul/target/" />
+    <ignored path="$PROJECT_DIR$/mall_item/target/" />
+    <ignored path="$PROJECT_DIR$/mall_item/mall_item_service/target/" />
+    <ignored path="$PROJECT_DIR$/mall_item/mall_item_interface/target/" />
+    <ignored path="$PROJECT_DIR$/mall_common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,62 +38,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c_login/pom.xml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CLoginApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_zuul/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="288">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MallHystrixDashboardApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_hystrix_dashboard/src/main/java/com/mall/MallHystrixDashboardApplication.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall_common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MallLoginApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/MallLoginApplication.java">
+      <file leaf-file-name="NumberUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/NumberUtils.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="JsonUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/JsonUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="126">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -97,35 +91,26 @@
       <file leaf-file-name="MallZuulApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="H_AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/controller/H_AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="54">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall_eureka/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="144">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/application.yml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -166,18 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-login-customer-8011/src/main/java/com/login/LoginApplication.java" />
-        <option value="$PROJECT_DIR$/mall-login-customer-8011/src/main/java/com/login/controller/H_AdminController.java" />
-        <option value="$PROJECT_DIR$/mall-login-8010/src/main/java/com/malllogin/controller/H_AdminController.java" />
-        <option value="$PROJECT_DIR$/mall-api/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/mall-api/src/main/java/com/login/entity/H_Admin.java" />
-        <option value="$PROJECT_DIR$/mall-api/src/main/java/com/api/entity/H_AdminExample.java" />
-        <option value="$PROJECT_DIR$/mall-login-customer-8011/src/main/java/com/login/service/impl/H_AdminServiceFallbackImpl.java" />
-        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/controller/service/impl/H_AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/service/H_AdminService.java" />
-        <option value="$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/resources/META-INF/spring-devtools.properties" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/controller/H_AdminController.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/service/impl/H_AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/resources/generatorConfig.xml" />
@@ -204,9 +177,7 @@
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/H_AdminController.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientService.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/mall_eureka/pom.xml" />
         <option value="$PROJECT_DIR$/mall_hystrix_dashboard/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mall_api/pom.xml" />
         <option value="$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/mall_hystrix_dashboard/src/main/java/com/mall/MallHystrixDashboardApplication.java" />
@@ -214,9 +185,23 @@
         <option value="$PROJECT_DIR$/mall_login/pom.xml" />
         <option value="$PROJECT_DIR$/c_login/pom.xml" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java" />
-        <option value="$PROJECT_DIR$/mall_zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/demo.java" />
+        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/demo2.java" />
+        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/Task.java" />
+        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/TimerManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java" />
         <option value="$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java" />
+        <option value="$PROJECT_DIR$/mall_zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_item/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java" />
+        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java" />
+        <option value="$PROJECT_DIR$/mall_common/pom.xml" />
       </list>
     </option>
   </component>
@@ -239,21 +224,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall-login" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall-login" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mall-zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall-zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -263,10 +234,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1763" />
-    <option name="y" value="350" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1062" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -274,6 +245,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,89 +257,25 @@
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_login" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -374,41 +283,16 @@
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,22 +313,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../XiajiErji" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3525836" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\templates" />
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\static" />
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-api\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.malllogin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\c_login\src\main\resources" />
-      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall\login" />
-      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\resources\META-INF" />
-      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall" />
-      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mall.api.user.service" />
@@ -453,10 +335,12 @@
       <recent name="com.mall.login.controller" />
       <recent name="com.mall.mapper" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\templates" />
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\static" />
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-api\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_common\src\main\java\utils" />
+      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\c_login\src\main\resources" />
+      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall\login" />
+      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\resources\META-INF" />
+      <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -471,7 +355,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallZuulApplication">
+  <component name="RunManager" selected="Spring Boot.itemService">
+    <configuration name="MallItemAppLication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mall.MallItemAppLication" />
+      <module name="mall_item_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -518,6 +413,11 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallEurekaApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
+    <configuration name="itemService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall_item_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallItemAppLication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration name="login" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_login" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallLoginApplication" />
@@ -551,13 +451,20 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.itemService" />
       <item itemvalue="Spring Boot.login_c" />
       <item itemvalue="Spring Boot.eureka" />
       <item itemvalue="Spring Boot.login" />
       <item itemvalue="Spring Boot.MallApiApplication" />
       <item itemvalue="Spring Boot.MallHystrixDashboardApplication" />
       <item itemvalue="Spring Boot.MallZuulApplication" />
+      <item itemvalue="Application.MallItemAppLication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MallItemAppLication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -595,12 +502,16 @@
       <workItem from="1561997934848" duration="20000" />
       <workItem from="1561998354952" duration="968000" />
       <workItem from="1562078350717" duration="1198000" />
-      <workItem from="1562162912628" duration="3261000" />
+      <workItem from="1562162912628" duration="3543000" />
+      <workItem from="1562250841744" duration="1573000" />
+      <workItem from="1562298022915" duration="70000" />
+      <workItem from="1563095470267" duration="6649000" />
+      <workItem from="1563199525092" duration="4975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93155000" />
+    <option name="totallyTimeSpent" value="106704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -608,18 +519,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.28976035" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49946696" weight="0.28976035" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.23268399" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.31876332" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.13616557" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.19349681" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.23638344" />
-      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.2167756" />
+      <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49946696" weight="0.13616557" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.17803837" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
@@ -635,7 +546,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="5.2083336E-4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.14935064" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.15686275" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -685,7 +596,7 @@
           <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="51" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -713,46 +624,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/MavenCK/UniversalMall/org/springframework/boot/spring-boot-devtools/2.1.5.RELEASE/spring-boot-devtools-2.1.5.RELEASE.jar!/org/springframework/boot/devtools/restart/RestartLauncher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/META-INF/spring-devtools.properties" />
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/service/H_AdminService.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/service/impl/H_AdminServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/mapperxml/H_AdminMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/test/java/com/mall/MallEurekaApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/entity/H_AdminExample.java" />
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/entity/H_Admin.java" />
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/entity/H_AdminExample.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/entity/H_Admin.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/login/mapperxml/H_AdminMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/mapper/H_AdminMapper.java" />
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/mapper/H_AdminMapper.java" />
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/mapper/H_AdminMapper.java" />
     <entry file="file://$PROJECT_DIR$/mall_api/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,36 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/MavenCK/UniversalMall/io/github/openfeign/feign-hystrix/9.5.0/feign-hystrix-9.5.0.jar!/feign/hystrix/HystrixInvocationHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -883,25 +728,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/c_login/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="198">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="252">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -912,24 +750,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/test/java/com/mall/MallZuulApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/test/java/com/mall/MallZuulApplicationTests.java" />
     <entry file="file://$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -940,48 +765,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/controller/H_AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="450">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/demo2.java" />
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/demo.java" />
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_hystrix_dashboard/src/main/java/com/mall/MallHystrixDashboardApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="108">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/TimerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/MallLoginApplication.java">
+    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/controller/H_AdminController.java">
+    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="41" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/MallLoginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="5" selection-start-line="16" selection-start-column="2" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="30" />
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/NumberUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1037,11 +1006,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mall_hystrix_dashboard</last-edited>
+          <last-edited>mall_common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.3525836" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

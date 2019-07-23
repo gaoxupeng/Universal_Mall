@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone : http://localhost:8001/eureka/ #eureka服务注册地址
+      defaultZone : http://localhost:10086/eureka/ #eureka服务注册地址
   instance:
     instance-id:  loginProvide
 

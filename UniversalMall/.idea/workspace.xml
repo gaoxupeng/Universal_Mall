@@ -38,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -50,67 +50,63 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="72">
+              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall_common/pom.xml">
+      <file leaf-file-name="CategoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/CategoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="396">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumberUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/NumberUtils.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="JsonUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/JsonUtils.java">
+      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="234">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdWorker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java">
+      <file leaf-file-name="MallItemAppLication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MallZuulApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="108">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_eureka/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="450">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="566">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
@@ -122,6 +118,7 @@
       <list>
         <option value="HTML File" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -151,11 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/controller/H_AdminController.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/service/impl/H_AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/resources/login/mapperxml/H_AdminMapper.xml" />
-        <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/mapper/H_AdminMapper.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/mapper/H_AdminMapper.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/mapper/H_AdminMapper.java" />
@@ -166,14 +158,12 @@
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/LoginApplication.java" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/ConfigBean.java" />
         <option value="$PROJECT_DIR$/c_login/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/c_login/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/login/service/H_AdminFallbackFactory.java" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/service/H_AdminFallbackFactory.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/controller/H_AdminController.java" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/service/H_AdminService.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminFallbackFactory.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminService.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/H_AdminController.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientService.java" />
         <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java" />
@@ -189,19 +179,26 @@
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/demo2.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/Task.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/TimerManager.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java" />
         <option value="$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java" />
         <option value="$PROJECT_DIR$/mall_zuul/pom.xml" />
         <option value="$PROJECT_DIR$/mall_eureka/pom.xml" />
         <option value="$PROJECT_DIR$/mall_item/pom.xml" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/pom.xml" />
-        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java" />
-        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java" />
         <option value="$PROJECT_DIR$/mall_common/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_login/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/c_login/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/pojo/Category.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java" />
+        <option value="$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -226,6 +223,21 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mall-zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="tk.mybatis:mapper-core:1.0.4" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -234,10 +246,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="2590" />
+    <option name="y" value="205" />
+    <option name="width" value="1242" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -245,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -257,25 +268,34 @@
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item_service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item_service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item_service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -283,16 +303,60 @@
             <path>
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall_common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_item_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,7 +374,7 @@
     <property name="SearchEverywhereHistoryKey" value="endpointu&#9;PSI&#9;JAVA://com.netflix.discovery.endpoint.EndpointUtils&#10;DiscoveryClient&#9;FILE&#9;jar://D:/MavenCK/mall/org/springframework/cloud/spring-cloud-commons/1.2.2.RELEASE/spring-cloud-commons-1.2.2.RELEASE.jar!/org/springframework/cloud/client/discovery/DiscoveryClient.class&#10;d&#9;FILE&#9;jar://D:/MavenCK/mall/com/netflix/eureka/eureka-client/1.6.2/eureka-client-1.6.2.jar!/com/netflix/discovery/DiscoveryClient.class&#10;discovery&#9;PSI&#9;JAVA://com.netflix.discovery.DiscoveryClient&#10;had&#9;FILE&#9;file://D:/ideaWork/Universal_Mall/UniversalMall/mall-login-8010/src/main/java/com/malllogin/service/H_AdminServiceImpl.java&#10;hadmin&#9;FILE&#9;file://D:/ideaWork/Universal_Mall/UniversalMall/mall-login-customer-8011/src/main/java/com/login/controller/H_AdminController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../XiajiErji" />
+    <property name="last_opened_file_path" value="D:/ideaWork" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -320,20 +384,8 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\templates" />
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\static" />
-      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-api\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.malllogin" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mall.api.user.service" />
-      <recent name="com.mall.login.service" />
-      <recent name="com.mall.login.controller.login.service" />
-      <recent name="com.mall.login.controller" />
-      <recent name="com.mall.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_common\src\main\java\utils" />
@@ -341,6 +393,18 @@
       <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall\login" />
       <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\resources\META-INF" />
       <recent name="D:\GitHubDesktopSpace\Universal_Mall\UniversalMall\mall_login\src\main\java\com\mall" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pojo" />
+      <recent name="com.mall.api.user.service" />
+      <recent name="com.mall.login.service" />
+      <recent name="com.mall.login.controller.login.service" />
+      <recent name="com.mall.login.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\templates" />
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-login-customer-8011\src\main\resources\static" />
+      <recent name="D:\ideaWork\Universal_Mall\UniversalMall\mall-api\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -355,18 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.itemService">
-    <configuration name="MallItemAppLication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mall.MallItemAppLication" />
-      <module name="mall_item_service" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mall.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Zuul">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -396,6 +449,11 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="Item" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall_item_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallItemAppLication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration name="MallApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallApiApplication" />
@@ -404,9 +462,10 @@
       <module name="mall_hystrix_dashboard" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallHystrixDashboardApplication" />
     </configuration>
-    <configuration name="MallZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Zuul" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration name="eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_eureka" />
@@ -451,20 +510,15 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.Item" />
       <item itemvalue="Spring Boot.itemService" />
       <item itemvalue="Spring Boot.login_c" />
       <item itemvalue="Spring Boot.eureka" />
       <item itemvalue="Spring Boot.login" />
       <item itemvalue="Spring Boot.MallApiApplication" />
       <item itemvalue="Spring Boot.MallHystrixDashboardApplication" />
-      <item itemvalue="Spring Boot.MallZuulApplication" />
-      <item itemvalue="Application.MallItemAppLication" />
+      <item itemvalue="Spring Boot.Zuul" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MallItemAppLication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -507,11 +561,19 @@
       <workItem from="1562298022915" duration="70000" />
       <workItem from="1563095470267" duration="6649000" />
       <workItem from="1563199525092" duration="4975000" />
+      <workItem from="1563435214396" duration="612000" />
+      <workItem from="1563459504215" duration="627000" />
+      <workItem from="1563597651453" duration="734000" />
+      <workItem from="1563727925876" duration="747000" />
+      <workItem from="1563807853468" duration="27000" />
+      <workItem from="1563890433622" duration="1521000" />
+      <workItem from="1563892426150" duration="83000" />
+      <workItem from="1563893388515" duration="5052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106704000" />
+    <option name="totallyTimeSpent" value="116107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -523,14 +585,14 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.13616557" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.19349681" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.6615905" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.2167756" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.27668846" />
       <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49946696" weight="0.13616557" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.17803837" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.35927504" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
@@ -624,40 +686,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/mapper/H_AdminMapper.java" />
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/mapper/H_AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/login/controller/LoginApplication.java" />
-    <entry file="file://$PROJECT_DIR$/c_login/src/test/java/com/mall/CLoginApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/service/impl/H_AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_login/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -733,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_login/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -792,9 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,31 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -866,32 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_eureka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -899,43 +871,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/NumberUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="396">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
@@ -949,8 +894,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_login/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_login/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="68" lean-forward="true" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <folding>
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/MavenCK/UniversalMall/tk/mybatis/mapper-base/1.0.1/mapper-base-1.0.1.jar!/tk/mybatis/mapper/common/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/MavenCK/UniversalMall/tk/mybatis/mapper-base/1.0.1/mapper-base-1.0.1.jar!/tk/mybatis/mapper/common/base/select/SelectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/MallItemAppLication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1090,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mall_common</last-edited>
+          <last-edited>mall_item_interface</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

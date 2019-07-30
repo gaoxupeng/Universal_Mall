@@ -1,5 +1,11 @@
 server:
   port: 8081
+
+mybatis:
+  type-aliases-package: com.mall.api.entity    # 所有Entity别名类所在包
+  mapper-locations:
+  - classpath*:**/mapperxml/**/*.xml                       # mapper映射文件
+
 spring:
   application:
     name: item-service

@@ -1,7 +1,7 @@
 package com.mall.service;
 
-import pojo.SpecGroup;
-import pojo.SpecParam;
+import com.mall.pojo.SpecGroup;
+import com.mall.pojo.SpecParam;
 
 import java.util.List;
 
@@ -13,7 +13,12 @@ public interface SpecificationService {
      * @param cid
      * @return
      */
-    public List<SpecGroup> queryGroupByCid(long cid);
+    List<SpecGroup> queryGroupByCid(long cid);
 
-    public List<SpecParam> queryParamByCid(long gid);
+    /**
+     * 查询规格参数组对应的参数设置详情
+     * @param groupId
+     * @return
+     */
+    List<SpecParam> queryParamByCid(long groupId);
 }

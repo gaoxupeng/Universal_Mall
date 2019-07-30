@@ -2,12 +2,14 @@ package com.mall.service.impl;
 
 import com.mall.mapper.SpecGroupMapper;
 import com.mall.mapper.SpecParamMapper;
+import com.mall.pojo.SpecGroup;
+import com.mall.pojo.SpecGroupExample;
+import com.mall.pojo.SpecParam;
+import com.mall.pojo.SpecParamExample;
 import com.mall.service.SpecificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import pojo.SpecGroup;
-import pojo.SpecParam;
 
 import java.util.List;
 
@@ -26,19 +28,25 @@ public class SpecificationServiceImpl implements SpecificationService {
      */
     @Override
     public List<SpecGroup> queryGroupByCid(long cid) {
-        SpecGroup specGroup = new SpecGroup();
-        specGroup.setCid(cid);
-        List<SpecGroup> specGroupList = specGroupMapper.select(specGroup);
+        SpecGroupExample specGroup = new SpecGroupExample();
+        specGroup.createCriteria().andCidEqualTo(cid);
+        List<SpecGroup> specGroupList = specGroupMapper.selectByExample(specGroup);
         if (CollectionUtils.isEmpty(specGroupList)){
 
         }
         return specGroupList;
     }
 
+    /**
+     * 查询规格参数组对应的参数设置详情
+     * @param groupId
+     * @return
+     */
     @Override
-    public List<SpecParam> queryParamByCid(long gid){
-        SpecParam specParam = new SpecParam();
-        List<SpecParam> specParamList = specParamMapper.select(specParam);
+    public List<SpecParam> queryParamByCid(long groupId){
+        SpecParamExample specParam = new SpecParamExample();
+        specParam.createCriteria().andGroupIdEqualTo(groupId);
+        List<SpecParam> specParamList = specParamMapper.selectByExample(specParam);
         return specParamList;
     }
 }

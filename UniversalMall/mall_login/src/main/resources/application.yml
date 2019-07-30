@@ -1,8 +1,8 @@
 
 mybatis:
-  type-aliases-package: com.mall.api.entity    # 所有Entity别名类所在包
+  type-aliases-package: com.mall.pojo    # 所有Entity别名类所在包
   mapper-locations:
-  - classpath*:**/mapperxml/**/*.xml                       # mapper映射文件
+  - classpath*:mapperxml/**/*.xml                       # mapper映射文件
 
 server:
   port: 8010

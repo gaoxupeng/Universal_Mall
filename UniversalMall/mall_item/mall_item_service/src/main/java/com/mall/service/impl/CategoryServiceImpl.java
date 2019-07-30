@@ -5,7 +5,7 @@ import com.mall.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import pojo.Category;
+import com.mall.pojo.Category;
 
 import java.util.List;
 

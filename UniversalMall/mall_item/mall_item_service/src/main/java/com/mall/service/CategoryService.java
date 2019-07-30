@@ -1,6 +1,6 @@
 package com.mall.service;
 
-import pojo.Category;
+import com.mall.pojo.Category;
 
 import java.util.List;
 

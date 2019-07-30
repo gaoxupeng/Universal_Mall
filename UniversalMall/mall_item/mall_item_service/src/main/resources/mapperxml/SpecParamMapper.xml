@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.SpecParamMapper" >
+  <resultMap id="BaseResultMap" type="com.mall.pojo.SpecParam" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="cid" property="cid" jdbcType="BIGINT" />
+    <result column="group_id" property="groupId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="numeric" property="numeric" jdbcType="BIT" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="generic" property="generic" jdbcType="BIT" />
+    <result column="searching" property="searching" jdbcType="BIT" />
+    <result column="segments" property="segments" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, cid, group_id, `name`, `numeric`, unit, generic, searching, segments
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mall.pojo.SpecParamExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_spec_param
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_spec_param
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tb_spec_param
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.mall.pojo.SpecParamExample" >
+    delete from tb_spec_param
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.mall.pojo.SpecParam" >
+    insert into tb_spec_param (id, cid, group_id, 
+      name, numeric, unit, generic, 
+      searching, segments)
+    values (#{id,jdbcType=BIGINT}, #{cid,jdbcType=BIGINT}, #{groupId,jdbcType=BIGINT}, 
+      #{name,jdbcType=VARCHAR}, #{numeric,jdbcType=BIT}, #{unit,jdbcType=VARCHAR}, #{generic,jdbcType=BIT}, 
+      #{searching,jdbcType=BIT}, #{segments,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mall.pojo.SpecParam" >
+    insert into tb_spec_param
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="cid != null" >
+        cid,
+      </if>
+      <if test="groupId != null" >
+        group_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="numeric != null" >
+        numeric,
+      </if>
+      <if test="unit != null" >
+        unit,
+      </if>
+      <if test="generic != null" >
+        generic,
+      </if>
+      <if test="searching != null" >
+        searching,
+      </if>
+      <if test="segments != null" >
+        segments,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="cid != null" >
+        #{cid,jdbcType=BIGINT},
+      </if>
+      <if test="groupId != null" >
+        #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="numeric != null" >
+        #{numeric,jdbcType=BIT},
+      </if>
+      <if test="unit != null" >
+        #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="generic != null" >
+        #{generic,jdbcType=BIT},
+      </if>
+      <if test="searching != null" >
+        #{searching,jdbcType=BIT},
+      </if>
+      <if test="segments != null" >
+        #{segments,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.mall.pojo.SpecParamExample" resultType="java.lang.Integer" >
+    select count(*) from tb_spec_param
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_spec_param
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.cid != null" >
+        cid = #{record.cid,jdbcType=BIGINT},
+      </if>
+      <if test="record.groupId != null" >
+        group_id = #{record.groupId,jdbcType=BIGINT},
+      </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.numeric != null" >
+        numeric = #{record.numeric,jdbcType=BIT},
+      </if>
+      <if test="record.unit != null" >
+        unit = #{record.unit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.generic != null" >
+        generic = #{record.generic,jdbcType=BIT},
+      </if>
+      <if test="record.searching != null" >
+        searching = #{record.searching,jdbcType=BIT},
+      </if>
+      <if test="record.segments != null" >
+        segments = #{record.segments,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_spec_param
+    set id = #{record.id,jdbcType=BIGINT},
+      cid = #{record.cid,jdbcType=BIGINT},
+      group_id = #{record.groupId,jdbcType=BIGINT},
+      name = #{record.name,jdbcType=VARCHAR},
+      numeric = #{record.numeric,jdbcType=BIT},
+      unit = #{record.unit,jdbcType=VARCHAR},
+      generic = #{record.generic,jdbcType=BIT},
+      searching = #{record.searching,jdbcType=BIT},
+      segments = #{record.segments,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.SpecParam" >
+    update tb_spec_param
+    <set >
+      <if test="cid != null" >
+        cid = #{cid,jdbcType=BIGINT},
+      </if>
+      <if test="groupId != null" >
+        group_id = #{groupId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="numeric != null" >
+        numeric = #{numeric,jdbcType=BIT},
+      </if>
+      <if test="unit != null" >
+        unit = #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="generic != null" >
+        generic = #{generic,jdbcType=BIT},
+      </if>
+      <if test="searching != null" >
+        searching = #{searching,jdbcType=BIT},
+      </if>
+      <if test="segments != null" >
+        segments = #{segments,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mall.pojo.SpecParam" >
+    update tb_spec_param
+    set cid = #{cid,jdbcType=BIGINT},
+      group_id = #{groupId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      numeric = #{numeric,jdbcType=BIT},
+      unit = #{unit,jdbcType=VARCHAR},
+      generic = #{generic,jdbcType=BIT},
+      searching = #{searching,jdbcType=BIT},
+      segments = #{segments,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

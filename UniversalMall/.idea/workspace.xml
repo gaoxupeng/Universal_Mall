@@ -23,6 +23,7 @@
     <ignored path="$PROJECT_DIR$/mall_item/mall_item_service/target/" />
     <ignored path="$PROJECT_DIR$/mall_item/mall_item_interface/target/" />
     <ignored path="$PROJECT_DIR$/mall_common/target/" />
+    <ignored path="$PROJECT_DIR$/mall_upload/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,75 +39,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpecificationServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/SpecificationServiceImpl.java">
+      <file leaf-file-name="BrandController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/BrandController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="220">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/SpecGroup.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_upload/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="77">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecParamMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/SpecParamMapper.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_zuul/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="8" column="13" selection-start-line="4" selection-start-column="3" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecParamMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/mapperxml/SpecParamMapper.xml">
+      <file leaf-file-name="MallUploadApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_upload/src/main/java/com/mall/MallUploadApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecificationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/SpecificationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="36" column="62" lean-forward="true" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/SpecParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecificationService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/SpecificationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall_upload/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrandService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/BrandService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrandServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/BrandServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#queryBrandByPage#0;class#BrandServiceImpl#0" />
+                <element signature="method#saveBrand#0;class#BrandServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrandMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/BrandMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -126,7 +143,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>malllogin</find>
-      <find>feign</find>
       <find>getServiceUrl</find>
       <find>DiscoveryClient</find>
       <find>getservice</find>
@@ -144,6 +160,7 @@
       <find>Example_Where_Clause</find>
       <find>oredCriteria</find>
       <find>Base_Column_List</find>
+      <find>feign</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -152,11 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall_api/pom.xml" />
-        <option value="$PROJECT_DIR$/mall_hystrix_dashboard/pom.xml" />
-        <option value="$PROJECT_DIR$/mall_hystrix_dashboard/src/main/java/com/mall/MallHystrixDashboardApplication.java" />
-        <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/MallLoginApplication.java" />
-        <option value="$PROJECT_DIR$/mall_login/pom.xml" />
         <option value="$PROJECT_DIR$/c_login/pom.xml" />
         <option value="$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java" />
         <option value="$PROJECT_DIR$/mall_login/src/main/java/com/mall/login/demo.java" />
@@ -170,7 +182,6 @@
         <option value="$PROJECT_DIR$/mall_item/pom.xml" />
         <option value="$PROJECT_DIR$/mall_common/src/main/java/utils/IdWorker.java" />
         <option value="$PROJECT_DIR$/mall_common/pom.xml" />
-        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/c_login/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/pojo/Category.java" />
@@ -184,10 +195,6 @@
         <option value="$PROJECT_DIR$/mall_common/src/main/java/com/mall/pojo/PageResult.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/pom.xml" />
         <option value="$PROJECT_DIR$/mall_common/src/main/java/com/mall/pojo/BrandQueryByPageParameter.java" />
-        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/BrandMapper.java" />
-        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/BrandServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/pojo/SpecGroup.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/pojo/SpecParam.java" />
@@ -203,6 +210,16 @@
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/SpecificationService.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/SpecificationServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/SpecificationController.java" />
+        <option value="$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/BrandController.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/BrandMapper.java" />
+        <option value="$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/Brand.java" />
+        <option value="$PROJECT_DIR$/mall_upload/pom.xml" />
+        <option value="$PROJECT_DIR$/mall_upload/src/main/java/com/mall/MallUploadApplication.java" />
+        <option value="$PROJECT_DIR$/mall_upload/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -227,21 +244,6 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mall-zuul" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall_item_interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -261,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,10 +270,59 @@
               <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UniversalMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniversalMall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall_zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -291,7 +341,7 @@
     <property name="SearchEverywhereHistoryKey" value="endpointu&#9;PSI&#9;JAVA://com.netflix.discovery.endpoint.EndpointUtils&#10;DiscoveryClient&#9;FILE&#9;jar://D:/MavenCK/mall/org/springframework/cloud/spring-cloud-commons/1.2.2.RELEASE/spring-cloud-commons-1.2.2.RELEASE.jar!/org/springframework/cloud/client/discovery/DiscoveryClient.class&#10;d&#9;FILE&#9;jar://D:/MavenCK/mall/com/netflix/eureka/eureka-client/1.6.2/eureka-client-1.6.2.jar!/com/netflix/discovery/DiscoveryClient.class&#10;discovery&#9;PSI&#9;JAVA://com.netflix.discovery.DiscoveryClient&#10;had&#9;FILE&#9;file://D:/ideaWork/Universal_Mall/UniversalMall/mall-login-8010/src/main/java/com/malllogin/service/H_AdminServiceImpl.java&#10;hadmin&#9;FILE&#9;file://D:/ideaWork/Universal_Mall/UniversalMall/mall-login-customer-8011/src/main/java/com/login/controller/H_AdminController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/ideaWork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall_upload/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -336,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.itemService">
+  <component name="RunManager" selected="Spring Boot.Upload">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -378,6 +428,11 @@
     <configuration name="MallHystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_hystrix_dashboard" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallHystrixDashboardApplication" />
+    </configuration>
+    <configuration name="Upload" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall_upload" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.MallUploadApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration name="Zuul" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall_zuul" />
@@ -437,6 +492,7 @@
       <item itemvalue="Spring Boot.MallApiApplication" />
       <item itemvalue="Spring Boot.MallHystrixDashboardApplication" />
       <item itemvalue="Spring Boot.Zuul" />
+      <item itemvalue="Spring Boot.Upload" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -493,11 +549,13 @@
       <workItem from="1564408231076" duration="5367000" />
       <workItem from="1564484724817" duration="914000" />
       <workItem from="1564495419229" duration="4336000" />
+      <workItem from="1564559143718" duration="830000" />
+      <workItem from="1564582507178" duration="4495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136284000" />
+    <option name="totallyTimeSpent" value="141609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,18 +572,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49946696" weight="0.28976035" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49946696" weight="0.26906317" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.13616557" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.07995736" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.3544776" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.20152505" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.1764706" />
       <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49946696" weight="0.35511982" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.17963752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.18976545" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
@@ -534,7 +592,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23965141" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35620916" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32968536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -584,14 +642,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="59" />
     </breakpoint-manager>
   </component>
@@ -635,73 +685,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall_common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/java/com/mall/MallEurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_login/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_login/src/main/java/com/mall/CLoginApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="68" lean-forward="true" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-          <folding>
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/MallZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/java/com/mall/config/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/MavenCK/UniversalMall/org/springframework/spring-web/5.0.8.RELEASE/spring-web-5.0.8.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -737,28 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/BrandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#queryCategoryByPid#0;class#CategoryServiceImpl#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,27 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/BrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -836,9 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,16 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/mapper/SpecGroupMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/resources/com/mall/mapperxml/SpecGroupMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/mapper/SpecGroupMapper.java" />
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -924,9 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,38 +873,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/mapper/SpecParamMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/mapper/SpecParamMapper.java" />
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/SpecGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/SpecParamMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="372">
           <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/resources/mapperxml/SpecParamMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="1422">
+          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -988,25 +904,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/SpecificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="36" column="62" lean-forward="true" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+        <state relative-caret-position="522">
+          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/SpecificationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/SpecificationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_api/src/main/java/com/mall/api/user/service/H_AdminClientFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_interface/src/main/java/com/mall/pojo/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/mapper/BrandMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#queryBrandByPage#0;class#BrandServiceImpl#0" />
+            <element signature="method#saveBrand#0;class#BrandServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_item/mall_item_service/src/main/java/com/mall/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="4" selection-start-column="3" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_upload/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_upload/src/main/java/com/mall/MallUploadApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_upload/src/test/java/com/mall/MallUploadApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_upload/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1092,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mall_item_interface</last-edited>
+          <last-edited>mall_upload</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

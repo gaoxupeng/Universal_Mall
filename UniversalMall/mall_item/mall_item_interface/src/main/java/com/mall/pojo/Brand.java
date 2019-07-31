@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Table(name = "tb_brand")
 /**
  * @author:li
- *
+ * 品牌表
  */
 @Data
 public class Brand implements Serializable {

@@ -4,6 +4,8 @@ import com.mall.pojo.BrandQueryByPageParameter;
 import com.mall.pojo.PageResult;
 import com.mall.pojo.Brand;
 
+import java.util.List;
+
 public interface BrandService {
 
     /**
@@ -13,4 +15,11 @@ public interface BrandService {
      */
     PageResult<Brand> queryBrandByPage(BrandQueryByPageParameter brandQueryByPageParameter);
 
+
+    /**
+     * 新增品牌
+     * @param brand
+     * @param cids
+     */
+    void saveBrand(Brand brand, List<Long> cids);
 }

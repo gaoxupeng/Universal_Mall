@@ -15,6 +15,7 @@
         <module>mall_hystrix_dashboard</module>
         <module>mall_item</module>
         <module>mall_common</module>
+        <module>mall_upload</module>
     </modules>
 
     <parent>

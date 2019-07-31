@@ -10,6 +10,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.mall.pojo.Brand;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -59,4 +60,20 @@ public class BrandServiceImpl implements BrandService {
          */
         return new PageResult<>(pageInfo.getTotal(),pageInfo.getList());
     }
+
+    /**
+     * 新增品牌及分类中间表
+     * @param brand
+     * @param cids
+     */
+    @Transactional
+    public void saveBrand(Brand brand,List<Long> cids){
+        //新增品牌信息
+        this.brandMapper.insertSelective(brand);
+        //新增品牌和分类中间表
+        for (Long cid : cids){
+            this.brandMapper.insertCategoryBrand(cid,brand.getId());
+        }
+    }
+
 }

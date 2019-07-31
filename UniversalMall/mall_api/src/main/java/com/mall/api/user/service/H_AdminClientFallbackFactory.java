@@ -15,7 +15,7 @@ public class H_AdminClientFallbackFactory implements FallbackFactory<H_AdminClie
         return  new H_AdminClientService() {
             @Override
             public String hello() {
-                return "测试FallbackFactory";
+                return "该服务暂时无法使用";
             }
 
             @Override

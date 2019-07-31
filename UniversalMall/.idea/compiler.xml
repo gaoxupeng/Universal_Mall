@@ -18,6 +18,7 @@
         <module name="mall_item_interface" />
         <module name="mall_item_service" />
         <module name="mall_login" />
+        <module name="mall_upload" />
         <module name="mall_zuul" />
       </profile>
     </annotationProcessing>

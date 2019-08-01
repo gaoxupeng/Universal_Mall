@@ -14,6 +14,8 @@ zuul:
   prefix: /api #添加路由前缀
   routes:
     item-service: /item/**
+  ignored-services:
+    - upload-service # 忽略upload-service服务
 
 hystrix:
   command:

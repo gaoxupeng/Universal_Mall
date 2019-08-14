@@ -1,0 +1,162 @@
+## 1. Centos7下安装FastDFS(默认已配好nginx)
+
+### 1.1 上传
+
+将附件中的文件上传到linux下的`/home/mall/fdfs`目录:
+
+​	FastDFS_v5.08.tar
+
+​	fastdfs-nginx-module_v1.16.tar
+
+​	libevent-2.0.22-stable.tar
+
+​	libfastcommon-master
+
+#### 1.2 安装libfastcommon-master
+
+这个没有yum包，只能通过编译安装：
+
+- 解压`libfastcommon-master.zip`
+
+  ```shell
+  tar -xvf libfastcommon-master.zip
+  ```
+
+- 进入解压完成的目录：
+
+  ```shell
+  cd libfastcommon-master
+  ```
+
+- 编译并且安装：如果权限不足使用sudo
+
+  ```shell
+  ./make.sh && ./makesh install
+  ```
+
+### 1.3 安装FastDFS
+
+#### 1.3.1 编译安装
+
+这里我们也采用编译安装，步骤与刚才的编译安装方式一样：
+
+- 解压
+
+  ```shell
+  tar -xvf FastDFS_v5.08.tar.gz
+  ```
+
+- 进入目录
+
+  ```he
+  cd FastDFS
+  ```
+
+- 编译并安装：如果权限不足使用sudo
+
+  ```shell
+  ./make.sh && ./makesh install
+  ```
+  
+- 校验安装结果
+
+1）安装完成，我们应该能在`/etc/init.d/`目录，通过命令`ll /etc/init.d/ | grep fdfs`看到FastDFS提供的启动脚本：
+
+- `fdfs_trackerd` 是tracker启动脚本
+- `fdfs_storaged` 是storage启动脚本
+
+
+
+2）我们可以在 `/etc/fdfs`目录，通过命令查看到以下配置文件模板：
+
+- `tarcker.conf.sample` 是tracker的配置文件模板
+- `storage.conf.sample` 是storage的配置文件模板
+- `client.conf.sample` 是客户端的配置文件模板
+
+
+
+#### 1.3.2 启动tracker
+
+FastDFS的tracker和storage在刚刚的安装过程中，都已经被安装了，因此我们安装这两种角色的方式是一样的。不同的是，两种需要不同的配置文件。
+
+我们要启动tracker，就修改刚刚看到的`tarcker.conf`，并且启动`fdfs_trackerd`脚本即可。
+
+- 编辑tracker配置
+
+首先我们将模板文件进行重命名：
+
+tracker.conf.sample 改为 tracker.conf
+
+打开`tracker.conf`，修改`base_path`配置：
+
+```shell
+base_path=/home/mall/fdfs/tracker # tracker的数据和日志存放目录
+```
+
+- 创建目录
+
+刚刚配置的目录可能不存在，我们手动创建出来或通过命令
+
+```shell
+sudo mkdir -p /home/mall/fdfs/tracker
+```
+
+- 启动tracker
+
+  我们可以使用 `sh /etc/init.d/fdfs_trackerd` 启动，不过安装过程中，fdfs已经被设置为系统服务，我们可以采用熟悉的服务启动方式：
+
+```shell
+sudo service fdfs_trackerd start # 启动fdfs_trackerd服务，停止用stop
+```
+
+另外，我们可以通过以下命令，设置tracker开机启动：
+
+```shell
+sudo chkconfig fdfs_trackerd on
+```
+
+
+
+#### 1.3.3 启动storage
+
+
+
+我们要启动tracker，就修改刚刚看到的`tarcker.conf`，并且启动`fdfs_trackerd`脚本即可。
+
+- 编辑storage配置
+
+首先我们将模板文件进行赋值和重命名：
+
+storage.conf.sample 改为 storage.conf
+
+打开`storage.conf`，修改`base_path`配置：
+
+```shell
+base_path=/home/mall/fdfs/storage # storage的数据和日志存放目录
+store_path0=/home/mall/fdfs/storage # storage的上传文件存放路径
+tracker_server=192.168.56.101:22122 # tracker的地址 192.168.56.101及虚拟机地址
+```
+
+- 创建目录
+
+刚刚配置的目录可能不存在，我们手动创建出来或通过命令
+
+```shell
+sudo mkdir -p /home/mall/fdfs/storage
+```
+
+- 启动storage
+
+  我们可以使用 `sh /etc/init.d/fdfs_storaged` 启动，同样我们可以用服务启动方式：
+
+```shell
+sudo service fdfs_storaged start  # 启动fdfs_storaged服务，停止用stop
+```
+
+另外，我们可以通过以下命令，设置tracker开机启动：
+
+```shell
+sudo chkconfig fdfs_storaged on
+```
+
+最后，通过`ps -ef | grep fdfs` 查看进程

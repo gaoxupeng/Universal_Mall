@@ -36,6 +36,7 @@
         <mall.version>1.0.0-SNAPSHOT</mall.version>
         <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>
         <jpa.version>1.0</jpa.version>
+        <lombok.version>1.16.10</lombok.version>
     </properties>
 
     <dependencyManagement>

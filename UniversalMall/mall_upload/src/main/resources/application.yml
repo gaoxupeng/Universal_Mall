@@ -27,3 +27,10 @@ fdfs:
     height: 60
   tracker-list: # tracker地址
     - 192.168.1.106:22122
+mall:
+  uoload:
+    baseUrl: "http://image.mall.com"
+    allowTypes:
+     - image/png
+     - image/jpeg
+     - image/jpg

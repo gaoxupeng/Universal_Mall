@@ -2,11 +2,13 @@ package com.mall.service.serviceimpl;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
+import com.mall.config.UploadProperties;
 import com.mall.service.UploadService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,10 +23,14 @@ import java.util.List;
  * Feature:
  */
 @Service
+@EnableConfigurationProperties(UploadProperties.class)
 public class UploadServiceImpl implements UploadService {
 
     @Autowired
     private FastFileStorageClient storageClient;
+
+    @Autowired
+    private UploadProperties uploadProperties;
 
     private static final Logger logger= LoggerFactory.getLogger(UploadServiceImpl.class);
 
@@ -47,7 +53,7 @@ public class UploadServiceImpl implements UploadService {
          */
         try {
             String type = file.getContentType();
-            if (!suffixes.contains(type)) {
+            if (!uploadProperties.getAllowTypes().contains(type)) {
                 logger.info("上传文件失败，文件类型不匹配：{}", type);
                 return null;
             }
@@ -67,7 +73,7 @@ public class UploadServiceImpl implements UploadService {
                   file.getInputStream(), file.getSize(), getExtension(file.getOriginalFilename()), null);
 
             //String url = "http://image.leyou.com/upload/"+file.getOriginalFilename();
-            String url = "http://image.mall.com/"+storePath.getFullPath();
+            String url = uploadProperties.getBaseUrl()+storePath.getFullPath();
 //            System.out.println(url);
             return url;
         }catch (Exception e){

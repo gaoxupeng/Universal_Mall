@@ -35,22 +35,16 @@ public class UploadServiceImpl implements UploadService {
     private static final Logger logger= LoggerFactory.getLogger(UploadServiceImpl.class);
 
     /**
-     *     支持上传的文件类型
+     * 1.图片信息校验
+     *      1)校验文件类型
+     *      2)校验图片内容
+     * 2.保存图片
+     *      1)生成保存目录
+     *      2)保存图片
+     *      3)拼接图片地址
      */
-    private static final List<String> suffixes = Arrays.asList("image/png","image/jpeg","image/jpg");
-
-
     @Override
     public String upload(MultipartFile file) {
-        /**
-         * 1.图片信息校验
-         *      1)校验文件类型
-         *      2)校验图片内容
-         * 2.保存图片
-         *      1)生成保存目录
-         *      2)保存图片
-         *      3)拼接图片地址
-         */
         try {
             String type = file.getContentType();
             if (!uploadProperties.getAllowTypes().contains(type)) {
@@ -63,18 +57,9 @@ public class UploadServiceImpl implements UploadService {
                 return null;
             }
 
-//            File dir = new File("G:\\LeYou\\upload");
-//            if (!dir.exists()){
-//                dir.mkdirs();
-//            }
-//            file.transferTo(new File(dir, Objects.requireNonNull(file.getOriginalFilename())));
-
             StorePath storePath = this.storageClient.uploadFile(
                   file.getInputStream(), file.getSize(), getExtension(file.getOriginalFilename()), null);
-
-            //String url = "http://image.leyou.com/upload/"+file.getOriginalFilename();
             String url = uploadProperties.getBaseUrl()+storePath.getFullPath();
-//            System.out.println(url);
             return url;
         }catch (Exception e){
             return null;

@@ -22,4 +22,6 @@ public interface BrandService {
      * @param cids
      */
     void saveBrand(Brand brand, List<Long> cids);
+
+    Brand queryById(Long id);
 }

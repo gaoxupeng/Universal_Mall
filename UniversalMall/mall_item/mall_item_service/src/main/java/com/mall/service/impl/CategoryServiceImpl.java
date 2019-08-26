@@ -30,4 +30,10 @@ public class CategoryServiceImpl implements CategoryService {
         }
         return list;
     }
+
+    @Override
+    public List<Category> queryByIds(List<Long> ids){
+        List<Category> list = categoryMapperl.selectByIdList(ids);
+        return list;
+    }
 }

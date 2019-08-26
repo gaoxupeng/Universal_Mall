@@ -66,6 +66,7 @@ public class BrandServiceImpl implements BrandService {
      * @param brand
      * @param cids
      */
+    @Override
     @Transactional
     public void saveBrand(Brand brand,List<Long> cids){
         //新增品牌信息
@@ -76,4 +77,10 @@ public class BrandServiceImpl implements BrandService {
         }
     }
 
+
+    @Override
+    public Brand queryById(Long id){
+        Brand brand = brandMapper.selectByPrimaryKey(id);
+        return brand;
+    }
 }

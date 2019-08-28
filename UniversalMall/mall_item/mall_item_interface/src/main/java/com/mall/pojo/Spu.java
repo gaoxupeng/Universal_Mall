@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.Transient;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class Spu {
@@ -35,6 +36,8 @@ public class Spu {
     private String cname;
     private String bname;
 
-    public void getBname(String name) {
-    }
+
+    private List<Sku> skus;
+
+    private SpuDetail spuDetail;
 }

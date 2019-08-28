@@ -1,9 +1,10 @@
 package com.mall.service.impl;
 
+import com.mall.mapper.SkuMapper;
+import com.mall.mapper.SpuDetailMapper;
 import com.mall.mapper.SpuMapper;
-import com.mall.pojo.Category;
-import com.mall.pojo.Spu;
-import com.mall.pojo.SpuExample;
+import com.mall.mapper.StockMapper;
+import com.mall.pojo.*;
 import com.mall.service.BrandService;
 import com.mall.service.CategoryService;
 import com.mall.service.GoodsService;
@@ -15,6 +16,7 @@ import tk.mybatis.mapper.entity.Example;
 import javax.swing.plaf.PanelUI;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,12 +26,21 @@ public class GoodsServiceImpl implements GoodsService {
     @Autowired
     private SpuMapper spuMapper;
 
+    @Autowired
+    private SpuDetailMapper spuDetailMapper;
+
+    @Autowired
+    private SkuMapper skuMapper;
+
+    @Autowired
+    private StockMapper stockMapper;
 
     @Autowired
     private CategoryService categoryService;
 
     @Autowired
     private BrandService brandService;
+
 
 
     /**
@@ -57,6 +68,45 @@ public class GoodsServiceImpl implements GoodsService {
         return spuList;
     }
 
+    /**
+     * 商品新增
+     * @param spu
+     */
+    @Override
+    public void saveGoods(Spu spu) {
+        //新增spu
+        spu.setId(null);
+        spu.setCreateTime(new Date());
+        spu.setLastUpdateTime(spu.getCreateTime());
+        spu.setSaleable(true);
+        spu.setValid(false);
+        int count = spuMapper.insertSelective(spu);
+        if (count != 1){
+            //新增失败
+        }
+
+        //新增detail
+         SpuDetail detail = spu.getSpuDetail();
+         detail.setSpuId(spu.getId());
+         spuDetailMapper.insert(detail);
+
+         List<Stock> stockList = new ArrayList<>();
+         //新增sku
+        List<Sku> skus = spu.getSkus();
+        for (int i = 0; i <skus.size() ; i++) {
+            skus.get(i).setCreateTime(new Date());
+            skus.get(i).setLastUpdateTime(skus.get(i).getCreateTime());
+            skus.get(i).setSpuId(skus.get(i).getId());
+            skuMapper.insert(skus.get(i));
+
+            //新增库存
+            Stock stock = new Stock();
+            stock.setSkuId(skus.get(i).getId());
+            stock.setStock(skus.get(i).getStock());
+            stockList.add(stock);
+        }
+        stockMapper.insertStockList(stockList);
+    }
 
 
     private void loadCategoryAndBrandName(List<Spu> spuList){
@@ -67,7 +117,8 @@ public class GoodsServiceImpl implements GoodsService {
            spu.setCname(StringUtils.join(categoryList,"/"));
 
            //处理品牌名称
-            spu.getBname(brandService.queryById(spu.getBrandId()).getName());
+           String name =  brandService.queryById(spu.getBrandId()).getName();
+            spu.setBname(name);
         }
 
     }

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mall.mapper.SpuMapper" >
-  <resultMap id="BaseResultMap" type="com.mall.pojo.Spu" >
+<mapper namespace="com.mall.mapper.SkuMapper" >
+  <resultMap id="BaseResultMap" type="com.mall.pojo.Sku" >
     <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="spu_id" property="spuId" jdbcType="BIGINT" />
     <result column="title" property="title" jdbcType="VARCHAR" />
-    <result column="sub_title" property="subTitle" jdbcType="VARCHAR" />
-    <result column="cid1" property="cid1" jdbcType="BIGINT" />
-    <result column="cid2" property="cid2" jdbcType="BIGINT" />
-    <result column="cid3" property="cid3" jdbcType="BIGINT" />
-    <result column="brand_id" property="brandId" jdbcType="BIGINT" />
-    <result column="saleable" property="saleable" jdbcType="BIT" />
-    <result column="valid" property="valid" jdbcType="BIT" />
+    <result column="images" property="images" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="BIGINT" />
+    <result column="indexes" property="indexes" jdbcType="VARCHAR" />
+    <result column="own_spec" property="ownSpec" jdbcType="VARCHAR" />
+    <result column="enable" property="enable" jdbcType="BIT" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="last_update_time" property="lastUpdateTime" jdbcType="TIMESTAMP" />
   </resultMap>
@@ -73,80 +72,74 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, title, sub_title, cid1, cid2, cid3, brand_id, saleable, valid, create_time, last_update_time
+    id, spu_id, title, images, price, indexes, own_spec, enable, create_time, last_update_time
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mall.pojo.SpuExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mall.pojo.SkuExample" >
     select
     <if test="distinct" >
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from tb_spu
+    from tb_sku
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
-    <if test="page !=0 or rows!=0">
-      limit #{page},#{rows}
-    </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
-    from tb_spu
+    from tb_sku
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from tb_spu
+    delete from tb_sku
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.mall.pojo.SpuExample" >
-    delete from tb_spu
+  <delete id="deleteByExample" parameterType="com.mall.pojo.SkuExample" >
+    delete from tb_sku
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.mall.pojo.Spu" >
-    insert into tb_spu (id, title, sub_title, 
-      cid1, cid2, cid3, brand_id, 
-      saleable, valid, create_time, 
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.mall.pojo.Sku" >
+    insert into tb_sku (id, spu_id, title, 
+      images, price, indexes, 
+      own_spec, enable, create_time, 
       last_update_time)
-    values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, 
-      #{cid1,jdbcType=BIGINT}, #{cid2,jdbcType=BIGINT}, #{cid3,jdbcType=BIGINT}, #{brandId,jdbcType=BIGINT}, 
-      #{saleable,jdbcType=BIT}, #{valid,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=BIGINT}, #{spuId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
+      #{images,jdbcType=VARCHAR}, #{price,jdbcType=BIGINT}, #{indexes,jdbcType=VARCHAR}, 
+      #{ownSpec,jdbcType=VARCHAR}, #{enable,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
       #{lastUpdateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.mall.pojo.Spu" >
-    insert into tb_spu
+  <insert id="insertSelective" parameterType="com.mall.pojo.Sku" >
+    insert into tb_sku
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
       </if>
+      <if test="spuId != null" >
+        spu_id,
+      </if>
       <if test="title != null" >
         title,
       </if>
-      <if test="subTitle != null" >
-        sub_title,
+      <if test="images != null" >
+        images,
       </if>
-      <if test="cid1 != null" >
-        cid1,
+      <if test="price != null" >
+        price,
       </if>
-      <if test="cid2 != null" >
-        cid2,
+      <if test="indexes != null" >
+        indexes,
       </if>
-      <if test="cid3 != null" >
-        cid3,
+      <if test="ownSpec != null" >
+        own_spec,
       </if>
-      <if test="brandId != null" >
-        brand_id,
-      </if>
-      <if test="saleable != null" >
-        saleable,
-      </if>
-      <if test="valid != null" >
-        valid,
+      <if test="enable != null" >
+        enable,
       </if>
       <if test="createTime != null" >
         create_time,
@@ -159,29 +152,26 @@
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
+      <if test="spuId != null" >
+        #{spuId,jdbcType=BIGINT},
+      </if>
       <if test="title != null" >
         #{title,jdbcType=VARCHAR},
       </if>
-      <if test="subTitle != null" >
-        #{subTitle,jdbcType=VARCHAR},
+      <if test="images != null" >
+        #{images,jdbcType=VARCHAR},
       </if>
-      <if test="cid1 != null" >
-        #{cid1,jdbcType=BIGINT},
+      <if test="price != null" >
+        #{price,jdbcType=BIGINT},
       </if>
-      <if test="cid2 != null" >
-        #{cid2,jdbcType=BIGINT},
+      <if test="indexes != null" >
+        #{indexes,jdbcType=VARCHAR},
       </if>
-      <if test="cid3 != null" >
-        #{cid3,jdbcType=BIGINT},
+      <if test="ownSpec != null" >
+        #{ownSpec,jdbcType=VARCHAR},
       </if>
-      <if test="brandId != null" >
-        #{brandId,jdbcType=BIGINT},
-      </if>
-      <if test="saleable != null" >
-        #{saleable,jdbcType=BIT},
-      </if>
-      <if test="valid != null" >
-        #{valid,jdbcType=BIT},
+      <if test="enable != null" >
+        #{enable,jdbcType=BIT},
       </if>
       <if test="createTime != null" >
         #{createTime,jdbcType=TIMESTAMP},
@@ -191,41 +181,38 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.mall.pojo.SpuExample" resultType="java.lang.Integer" >
-    select count(*) from tb_spu
+  <select id="countByExample" parameterType="com.mall.pojo.SkuExample" resultType="java.lang.Integer" >
+    select count(*) from tb_sku
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update tb_spu
+    update tb_sku
     <set >
       <if test="record.id != null" >
         id = #{record.id,jdbcType=BIGINT},
       </if>
+      <if test="record.spuId != null" >
+        spu_id = #{record.spuId,jdbcType=BIGINT},
+      </if>
       <if test="record.title != null" >
         title = #{record.title,jdbcType=VARCHAR},
       </if>
-      <if test="record.subTitle != null" >
-        sub_title = #{record.subTitle,jdbcType=VARCHAR},
+      <if test="record.images != null" >
+        images = #{record.images,jdbcType=VARCHAR},
       </if>
-      <if test="record.cid1 != null" >
-        cid1 = #{record.cid1,jdbcType=BIGINT},
+      <if test="record.price != null" >
+        price = #{record.price,jdbcType=BIGINT},
       </if>
-      <if test="record.cid2 != null" >
-        cid2 = #{record.cid2,jdbcType=BIGINT},
+      <if test="record.indexes != null" >
+        indexes = #{record.indexes,jdbcType=VARCHAR},
       </if>
-      <if test="record.cid3 != null" >
-        cid3 = #{record.cid3,jdbcType=BIGINT},
+      <if test="record.ownSpec != null" >
+        own_spec = #{record.ownSpec,jdbcType=VARCHAR},
       </if>
-      <if test="record.brandId != null" >
-        brand_id = #{record.brandId,jdbcType=BIGINT},
-      </if>
-      <if test="record.saleable != null" >
-        saleable = #{record.saleable,jdbcType=BIT},
-      </if>
-      <if test="record.valid != null" >
-        valid = #{record.valid,jdbcType=BIT},
+      <if test="record.enable != null" >
+        enable = #{record.enable,jdbcType=BIT},
       </if>
       <if test="record.createTime != null" >
         create_time = #{record.createTime,jdbcType=TIMESTAMP},
@@ -239,48 +226,44 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update tb_spu
+    update tb_sku
     set id = #{record.id,jdbcType=BIGINT},
+      spu_id = #{record.spuId,jdbcType=BIGINT},
       title = #{record.title,jdbcType=VARCHAR},
-      sub_title = #{record.subTitle,jdbcType=VARCHAR},
-      cid1 = #{record.cid1,jdbcType=BIGINT},
-      cid2 = #{record.cid2,jdbcType=BIGINT},
-      cid3 = #{record.cid3,jdbcType=BIGINT},
-      brand_id = #{record.brandId,jdbcType=BIGINT},
-      saleable = #{record.saleable,jdbcType=BIT},
-      valid = #{record.valid,jdbcType=BIT},
+      images = #{record.images,jdbcType=VARCHAR},
+      price = #{record.price,jdbcType=BIGINT},
+      indexes = #{record.indexes,jdbcType=VARCHAR},
+      own_spec = #{record.ownSpec,jdbcType=VARCHAR},
+      enable = #{record.enable,jdbcType=BIT},
       create_time = #{record.createTime,jdbcType=TIMESTAMP},
       last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Spu" >
-    update tb_spu
+  <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Sku" >
+    update tb_sku
     <set >
+      <if test="spuId != null" >
+        spu_id = #{spuId,jdbcType=BIGINT},
+      </if>
       <if test="title != null" >
         title = #{title,jdbcType=VARCHAR},
       </if>
-      <if test="subTitle != null" >
-        sub_title = #{subTitle,jdbcType=VARCHAR},
+      <if test="images != null" >
+        images = #{images,jdbcType=VARCHAR},
       </if>
-      <if test="cid1 != null" >
-        cid1 = #{cid1,jdbcType=BIGINT},
+      <if test="price != null" >
+        price = #{price,jdbcType=BIGINT},
       </if>
-      <if test="cid2 != null" >
-        cid2 = #{cid2,jdbcType=BIGINT},
+      <if test="indexes != null" >
+        indexes = #{indexes,jdbcType=VARCHAR},
       </if>
-      <if test="cid3 != null" >
-        cid3 = #{cid3,jdbcType=BIGINT},
+      <if test="ownSpec != null" >
+        own_spec = #{ownSpec,jdbcType=VARCHAR},
       </if>
-      <if test="brandId != null" >
-        brand_id = #{brandId,jdbcType=BIGINT},
-      </if>
-      <if test="saleable != null" >
-        saleable = #{saleable,jdbcType=BIT},
-      </if>
-      <if test="valid != null" >
-        valid = #{valid,jdbcType=BIT},
+      <if test="enable != null" >
+        enable = #{enable,jdbcType=BIT},
       </if>
       <if test="createTime != null" >
         create_time = #{createTime,jdbcType=TIMESTAMP},
@@ -291,16 +274,15 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Spu" >
-    update tb_spu
-    set title = #{title,jdbcType=VARCHAR},
-      sub_title = #{subTitle,jdbcType=VARCHAR},
-      cid1 = #{cid1,jdbcType=BIGINT},
-      cid2 = #{cid2,jdbcType=BIGINT},
-      cid3 = #{cid3,jdbcType=BIGINT},
-      brand_id = #{brandId,jdbcType=BIGINT},
-      saleable = #{saleable,jdbcType=BIT},
-      valid = #{valid,jdbcType=BIT},
+  <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Sku" >
+    update tb_sku
+    set spu_id = #{spuId,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      images = #{images,jdbcType=VARCHAR},
+      price = #{price,jdbcType=BIGINT},
+      indexes = #{indexes,jdbcType=VARCHAR},
+      own_spec = #{ownSpec,jdbcType=VARCHAR},
+      enable = #{enable,jdbcType=BIT},
       create_time = #{createTime,jdbcType=TIMESTAMP},
       last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}

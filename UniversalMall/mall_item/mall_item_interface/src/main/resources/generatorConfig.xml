@@ -40,6 +40,7 @@
         </javaClientGenerator>
 
         <!--对应数据库表名，多个表，请复制指定 -->
-        <table tableName="tb_spu_detail" domainObjectName="SpuDetail"></table>
+        <table tableName="tb_stock" domainObjectName="Stock"></table>
+
     </context>
 </generatorConfiguration>

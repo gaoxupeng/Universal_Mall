@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.StockMapper" >
+  <resultMap id="BaseResultMap" type="com.mall.pojo.Stock" >
+    <id column="sku_id" property="skuId" jdbcType="BIGINT" />
+    <result column="seckill_stock" property="seckillStock" jdbcType="INTEGER" />
+    <result column="seckill_total" property="seckillTotal" jdbcType="INTEGER" />
+    <result column="stock" property="stock" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    sku_id, seckill_stock, seckill_total, stock
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mall.pojo.StockExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_stock
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_stock
+    where sku_id = #{skuId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tb_stock
+    where sku_id = #{skuId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.mall.pojo.StockExample" >
+    delete from tb_stock
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.mall.pojo.Stock" >
+    insert into tb_stock (sku_id, seckill_stock, seckill_total, 
+      stock)
+    values (#{skuId,jdbcType=BIGINT}, #{seckillStock,jdbcType=INTEGER}, #{seckillTotal,jdbcType=INTEGER}, 
+      #{stock,jdbcType=INTEGER})
+  </insert>
+
+  <insert id="insertStockList">
+     insert into tb_stock (sku_id, seckill_stock, seckill_total,
+      stock)
+    values
+    <foreach collection="stockList" item="item" index="index" separator=",">
+      (#{item.skuId},#{item.seckillStock},#{item.seckillTotal},#{item.stock})
+    </foreach>
+  </insert>
+
+  <insert id="insertSelective" parameterType="com.mall.pojo.Stock" >
+    insert into tb_stock
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="skuId != null" >
+        sku_id,
+      </if>
+      <if test="seckillStock != null" >
+        seckill_stock,
+      </if>
+      <if test="seckillTotal != null" >
+        seckill_total,
+      </if>
+      <if test="stock != null" >
+        stock,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="skuId != null" >
+        #{skuId,jdbcType=BIGINT},
+      </if>
+      <if test="seckillStock != null" >
+        #{seckillStock,jdbcType=INTEGER},
+      </if>
+      <if test="seckillTotal != null" >
+        #{seckillTotal,jdbcType=INTEGER},
+      </if>
+      <if test="stock != null" >
+        #{stock,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.mall.pojo.StockExample" resultType="java.lang.Integer" >
+    select count(*) from tb_stock
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_stock
+    <set >
+      <if test="record.skuId != null" >
+        sku_id = #{record.skuId,jdbcType=BIGINT},
+      </if>
+      <if test="record.seckillStock != null" >
+        seckill_stock = #{record.seckillStock,jdbcType=INTEGER},
+      </if>
+      <if test="record.seckillTotal != null" >
+        seckill_total = #{record.seckillTotal,jdbcType=INTEGER},
+      </if>
+      <if test="record.stock != null" >
+        stock = #{record.stock,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_stock
+    set sku_id = #{record.skuId,jdbcType=BIGINT},
+      seckill_stock = #{record.seckillStock,jdbcType=INTEGER},
+      seckill_total = #{record.seckillTotal,jdbcType=INTEGER},
+      stock = #{record.stock,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Stock" >
+    update tb_stock
+    <set >
+      <if test="seckillStock != null" >
+        seckill_stock = #{seckillStock,jdbcType=INTEGER},
+      </if>
+      <if test="seckillTotal != null" >
+        seckill_total = #{seckillTotal,jdbcType=INTEGER},
+      </if>
+      <if test="stock != null" >
+        stock = #{stock,jdbcType=INTEGER},
+      </if>
+    </set>
+    where sku_id = #{skuId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Stock" >
+    update tb_stock
+    set seckill_stock = #{seckillStock,jdbcType=INTEGER},
+      seckill_total = #{seckillTotal,jdbcType=INTEGER},
+      stock = #{stock,jdbcType=INTEGER}
+    where sku_id = #{skuId,jdbcType=BIGINT}
+  </update>
+</mapper>

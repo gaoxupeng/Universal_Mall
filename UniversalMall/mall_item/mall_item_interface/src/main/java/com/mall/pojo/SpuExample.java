@@ -125,6 +125,11 @@ public class SpuExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
+        public Criteria fenye(int startRow,int pageSize) {
+            addCriterion("limit "+startRow+","+pageSize);
+            return (Criteria) this;
+        }
+
         public Criteria andIdIsNull() {
             addCriterion("id is null");
             return (Criteria) this;

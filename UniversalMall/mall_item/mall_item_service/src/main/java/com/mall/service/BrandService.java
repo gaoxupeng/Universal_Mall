@@ -24,4 +24,10 @@ public interface BrandService {
     void saveBrand(Brand brand, List<Long> cids);
 
     Brand queryById(Long id);
+
+    /**
+     * 查询品牌信息
+     * @param cid
+     */
+    List<Brand> queryBrandByCategory(Long cid);
 }

@@ -27,7 +27,7 @@ public class SpecificationServiceImpl implements SpecificationService {
      * @return
      */
     @Override
-    public List<SpecGroup> queryGroupByCid(long cid) {
+    public List<SpecGroup> queryGroupByCid(Long cid) {
         SpecGroupExample specGroup = new SpecGroupExample();
         specGroup.createCriteria().andCidEqualTo(cid);
         List<SpecGroup> specGroupList = specGroupMapper.selectByExample(specGroup);
@@ -43,9 +43,14 @@ public class SpecificationServiceImpl implements SpecificationService {
      * @return
      */
     @Override
-    public List<SpecParam> queryParamByCid(long groupId){
+    public List<SpecParam> queryParamList(Long groupId,Long cid){
         SpecParamExample specParam = new SpecParamExample();
-        specParam.createCriteria().andGroupIdEqualTo(groupId);
+        if (null!=groupId){
+            specParam.createCriteria().andGroupIdEqualTo(groupId);
+        }
+        if (null!=cid){
+            specParam.createCriteria().andCidEqualTo(cid);
+        }
         List<SpecParam> specParamList = specParamMapper.selectByExample(specParam);
         return specParamList;
     }

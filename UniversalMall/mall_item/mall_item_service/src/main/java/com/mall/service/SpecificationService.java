@@ -13,12 +13,12 @@ public interface SpecificationService {
      * @param cid
      * @return
      */
-    List<SpecGroup> queryGroupByCid(long cid);
+    List<SpecGroup> queryGroupByCid(Long cid);
 
     /**
      * 查询规格参数组对应的参数设置详情
      * @param groupId
      * @return
      */
-    List<SpecParam> queryParamByCid(long groupId);
+    List<SpecParam> queryParamList(Long groupId,Long cid);
 }

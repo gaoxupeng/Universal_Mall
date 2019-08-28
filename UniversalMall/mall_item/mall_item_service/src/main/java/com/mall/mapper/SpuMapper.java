@@ -19,7 +19,7 @@ public interface SpuMapper {
 
     int insertSelective(Spu record);
 
-    List<Spu> selectByExample(SpuExample example,@Param("page") int page,@Param("rows") int rows);
+    List<Spu> selectByExample(SpuExample example);
 
     Spu selectByPrimaryKey(Long id);
 

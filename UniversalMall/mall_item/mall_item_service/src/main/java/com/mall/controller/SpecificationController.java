@@ -33,8 +33,9 @@ public class SpecificationController {
      * @return
      */
     @GetMapping("params")
-    public ResponseEntity<List<SpecParam>> queryParamByCid(@RequestParam("gid") long groupId){
-        return ResponseEntity.ok(specificationService.queryParamByCid(groupId));
+    public ResponseEntity<List<SpecParam>> queryParamList(
+            @RequestParam(value = "gid",required = false) Long groupId,
+            @RequestParam(value = "cid",required = false) Long cid){
+        return ResponseEntity.ok(specificationService.queryParamList(groupId,cid));
     }
-
 }

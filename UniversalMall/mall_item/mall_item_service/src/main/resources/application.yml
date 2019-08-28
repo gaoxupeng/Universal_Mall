@@ -1,5 +1,7 @@
 server:
   port: 8081
+  tomcat:
+    max-connections: 60000  #tomcat的IO连接超时时长
 
 mybatis:
   type-aliases-package: com.mall.api.entity    # 所有Entity别名类所在包
@@ -14,6 +16,7 @@ spring:
       username: root
       password: myoa888
       driver-class-name: com.mysql.jdbc.Driver
+
 eureka:
   client:
     serviceUrl:

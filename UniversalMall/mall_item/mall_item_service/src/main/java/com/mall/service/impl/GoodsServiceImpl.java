@@ -32,6 +32,14 @@ public class GoodsServiceImpl implements GoodsService {
     private BrandService brandService;
 
 
+    /**
+     * 查询商品列表
+     * @param page
+     * @param rows
+     * @param saleable
+     * @param key
+     * @return
+     */
     @Override
     public List<Spu> querySpuBypage(Integer page,Integer rows,Boolean saleable,String key) {
         SpuExample spuExample = new SpuExample();
@@ -41,10 +49,15 @@ public class GoodsServiceImpl implements GoodsService {
         if (saleable != null){
             spuExample.createCriteria().andSaleableEqualTo(saleable);
         }
+        //按照最后修改时间排序
         spuExample.setOrderByClause("last_update_time DESC");
-        List<Spu> spuList = spuMapper.selectByExample(spuExample,page,rows);
+        spuExample.setPage(1);
+        spuExample.setRows(5);
+        List<Spu> spuList = spuMapper.selectByExample(spuExample);
         return spuList;
     }
+
+
 
     private void loadCategoryAndBrandName(List<Spu> spuList){
         for (Spu spu:spuList){

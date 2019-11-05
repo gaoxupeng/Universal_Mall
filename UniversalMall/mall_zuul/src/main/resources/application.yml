@@ -13,7 +13,7 @@ eureka:
 zuul:
   prefix: /api #添加路由前缀
   routes:
-    item-service: /item/**
+    item-service: /item/**  
     upload-service:
       path: /upload/** #过滤上传文件服务
       serviceId: upload-service

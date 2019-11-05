@@ -15,7 +15,7 @@ zuul:
   routes:
     item-service: /item/**
     upload-service:
-      path: /upload/**
+      path: /upload/** #过滤上传文件服务
       serviceId: upload-service
       strip-prefix: false
 

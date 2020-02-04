@@ -1,10 +1,7 @@
 *.classes
 /*.idea
 *.iml
-/*.iml
-/*/*.iml
-*/generatorConfig.xml
-
+generatorConfig.xml
 */target
 */*/target
 */*/*/target

@@ -3,8 +3,8 @@
 *.iml
 /*.iml
 /*/*.iml
-*/*/generatorConfig.xml
-*/*/*/generatorConfig.xml
+*/*/*/*/*/generatorConfig.xml
+
 */target
 */*/target
 */*/*/target

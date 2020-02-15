@@ -1,5 +1,5 @@
 
 mybatis:
-  type-aliases-package: com.mall.api.entity    # 所有Entity别名类所在包
+  type-aliases-package: com.mall.api.entity    # 鎵�鏈塃ntity鍒悕绫绘墍鍦ㄥ寘
   mapper-locations:
-  - classpath:**/mapperxml/**/*.xml                       # mapper映射文件
+  - classpath:**/mapperxml/**/*.xml                       # mapper鏄犲皠鏂囦欢

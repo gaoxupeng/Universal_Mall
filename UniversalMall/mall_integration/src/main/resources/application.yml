@@ -1,7 +1,8 @@
 
 server:
-  port: 9090
+  port: 9098
 
+#docker数据库连接
 #spring:
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/universal_mall?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
@@ -13,6 +14,6 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3308/universal_mall?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
-      username: root
+    username: root
     password: myoa888
     driver-class-name: com.mysql.jdbc.Driver

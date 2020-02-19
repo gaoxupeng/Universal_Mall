@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by lsf on 2018/6/5.
- */
 @Component
 public class MyCommandRunner implements CommandLineRunner {
     private static Logger logger = LoggerFactory.getLogger(MyCommandRunner.class);

@@ -1,6 +1,6 @@
 
 server:
-  port: 10086
+  port: 10087
 
 spring:
   application:

@@ -16,6 +16,7 @@
         <module>mall_item</module>
         <module>mall_common</module>
         <module>mall_upload</module>
+        <module>mall_zuul</module>
     </modules>
 
     <parent>

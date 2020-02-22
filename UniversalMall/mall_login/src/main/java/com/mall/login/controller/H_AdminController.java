@@ -52,8 +52,4 @@ public class H_AdminController {
         return a;
     }
 
-    @RequestMapping("/hello")
-    public String hello(String userName,String passWord){
-        return "hello word333333333333";
-    }
 }

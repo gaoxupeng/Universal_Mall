@@ -10,7 +10,7 @@
     <properties url="${mybatis.generator.generatorConfig.properties}"/>-->
 
     <!--数据库驱动包路径 -->
-    <classPathEntry location="D:\GitHubDesktopSpace\mysql-connector-java-5.0.4-bin.jar"/>
+    <classPathEntry location="D:\GitHubSpace\Universal_Mall\mysql-connector-java-5.1.32.jar"/>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <!--关闭注释 -->
@@ -19,7 +19,7 @@
         </commentGenerator>
 
         <!--数据库连接信息 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3308/universal_mall?useUnicode=true&amp;characterEncoding=utf-8" userId="root"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/universal_mall?useUnicode=true&amp;characterEncoding=utf-8" userId="root"
                         password="myoa888">
         </jdbcConnection>
 

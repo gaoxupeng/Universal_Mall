@@ -1,42 +1,40 @@
-# Universal_Mall
+####  项目初衷
 
-### 1.简要介绍
+- [ ] 方便自己在工作之余，可以学习些感兴趣的技术。之所以放到`GitHub`，一是看到提交的绿色框框，心情会变好，同时也增强些成就感；二是希望对自己日后求职会有帮助。
 
-这个商城项目只是为了自我学习，因此注重自己学的新技术的落地实现，注重业务逻辑，倾向于后端，前端leyou，是我借用黑马的一个vue项目。
+#### 当前计划
 
-### 2.子项目介绍
+- 因当前项目不涉及到微服务这块，所以才会将此项目设计为微服务，很多地方会存在瑕疵。其次，项目重在学会相关组件使用，业务不属于重点，很多地方因此并不完善，比如CRUD，我可能只做个查询或者只做个添加就结束了某块的编码。
+- 目前学习重心会放在`mall_integration`，准备从头到尾重新撸一遍`SpringBoot`。
+  - 其实一部分原因自己电脑有点落后了，性能更不上，服务启动了，比较卡，Linux，Nginx，Mysql，后期再加上这个那个的，电脑支撑不了，先打住。希望2020年可以找个满意的工作，让我有小钱钱去换个性能高的电脑。
+  - 购买服务器也提上了日程，不过暂时还是先撸`SpringBoot`吧，除此之外，多线程，JVM等等也要抓紧学习，框架的优先级先排排后吧。
 
-mall_eureka        服务注册中心
+**`mall_integration`  ** `相关博客链接教程放在末尾`
 
-mall_zuul             服务网关中心
+```
+开发框架:SpringBOOt MyBatis MyBatis_Plus
+数据库相关：MySql Druid 
+日志系统：logback
+```
 
-mall_upload        服务上传配置
 
-mall_item             商城品牌管理
 
-### 3.技术展望，期待落地实现
+#### 各个模块简要介绍
 
-分布式服务框架。如Dubbo、SpringCloud
+- `mall_api`： 主要作用是用来生成一些公共的类，比如用户，部门等。采用`mybatis.generator`，后期可能考虑剔除这个模块，或者与`mall_common`整合。
+- `mall_common`：目前是用来充当一个公共的模块，目前主要内容是一些公共的工具类，例如分页。
+- `mall_eureka`：服务注册中心，后期会考虑替换成阿里的`nacos`。
+- `mall_hystrix_dashboard`：断路器组件，进行服务熔断。
+- `mall_integration`：此模块跟此项目没有什么必然关系，这个模块主要是自己用来学习`SpringBoot`的一个项目，这个模块会集成很多第三方的工具，比如`Druid`，`Redis`，`MQ`等，可以说是一个`SpringBoot`连接当前社会环境主流的第三方工具的一个模板事例。
+- `mall_item`：一个商品相关的模块，涉及到商品的品牌，类别，规格参数。目前完成部分编码。
+- `mall_login`：登录模块，目前完成部分编码。
+- `mall_upload`：一个上传的模块，目前支持`FastDfs`。
+- `mall_zuul`:服务网关，使用了Nginx。
 
-分库分表  MyCat
+ **前端采用VUE，是网上找的一个VUE项目，后期可能考虑自己写一个。**[VUE项目](https://github.com/gaoxupeng/leyou)
 
-分布式事务。2PC、3PC、TCC
+#### 博客链接
 
-分布式锁。Redis实现、zk实现
+[SpingBoot系列教程（一）：整合Mybatis-plus+Druid](https://blog.csdn.net/qq_41142325/article/details/104402129)
 
-消息中间件。Kafka、RabbitMQ、RocketMQ
-
-分布式缓存。Redis、Memcached
-
-分布式搜索系统。Elasticsearch，solr
-分布式理论。CAP、BASE
-
-高性能、高可用、高并发。分库分表、读写分离、缓存、限流、降级、异步消息
-
-以上这些知识点，有几个方面需要注意：
-
-1、要知道同类竞品之间的差异、优缺点
-2、要知道为什么使用这类产品，如RPC框架、消息中间件等
-3、使用这些产品带来的一些问题是什么，如分库分表带来的分布式事务问题
-
-4、常用中间件的基本原理，如Redis的线程模型、zk的存储模型
+[SpingBoot系列教程（二）：SpringBoot+Logback](https://blog.csdn.net/qq_41142325/article/details/104436697)

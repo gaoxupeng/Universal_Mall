@@ -40,4 +40,21 @@ public class UserController {
         boolean flag = userService.save(user);
         return flag;
     }
+
+    /**
+     * 异常处理
+     */
+    @RequestMapping("error")
+    public void error(){
+        int i = 1/0;
+    }
+
+    /**
+     * 异常处理
+     */
+    @RequestMapping("nullException")
+    public void nullException(){
+       String str = null;
+       str.indexOf(",");
+    }
 }

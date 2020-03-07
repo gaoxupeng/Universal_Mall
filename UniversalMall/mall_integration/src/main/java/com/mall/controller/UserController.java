@@ -3,12 +3,14 @@ package com.mall.controller;
 
 import com.mall.model.TbUser;
 import com.mall.service.UserService;
+import com.mall.utils.redis.RedisUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -26,12 +28,19 @@ public class UserController {
     @Autowired
     public UserService userService;
 
+    @Resource
+    private RedisUtil redisUtil;
+
     private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @RequestMapping("getAllUser")
     public List<TbUser> getAllUsers(){
         List<TbUser> userList = userService.list();
-        LOG.info("查询到的数据为"+userList);
+        //LOG.info("查询到的数据为"+userList);
+        for (TbUser user:userList
+             ) {
+            redisUtil.set(user.getUsername(),user);
+        }
         return userList;
     }
 
@@ -57,4 +66,5 @@ public class UserController {
        String str = null;
        str.indexOf(",");
     }
+
 }

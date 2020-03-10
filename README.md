@@ -7,13 +7,38 @@
 - 因当前项目不涉及到微服务这块，所以才会将此项目设计为微服务，很多地方会存在瑕疵。其次，项目重在学会相关组件使用，业务不属于重点，很多地方因此并不完善，比如CRUD，我可能只做个查询或者只做个添加就结束了某块的编码。
 - 目前学习重心会放在`mall_integration`，准备从头到尾重新撸一遍`SpringBoot`。
   - 其实一部分原因自己电脑有点落后了，性能更不上，服务启动了，比较卡，Linux，Nginx，Mysql，后期再加上这个那个的，电脑支撑不了，先打住。希望2020年可以找个满意的工作，让我有小钱钱去换个性能高的电脑。
+  
   - 购买服务器也提上了日程，不过暂时还是先撸`SpringBoot`吧，除此之外，多线程，JVM等等也要抓紧学习，框架的优先级先排排后吧。
+  
+  - 项目文件层次
+  
+    ```javascript
+    -main
+    	|-java
+    		|-com.mall
+    			|-config   //配置文件
+    			|-controller
+    			|-dao
+    			|-model
+    			|-server
+    			|-utils
+    				|-config
+    					|-exception   //自定义异常，全局异常
+    					|-redis     //整合redis
+    	|-resources
+    		|-logback
+    		|-mapper   //mybatis的dao对应的语句
+    		|-static
+    			|-error //错误页面
+    ```
+  
+    
 
-**`mall_integration`  ** `相关博客链接教程放在末尾`
+**mall_integration  ** 的技术栈`相关博客链接教程放在末尾`
 
 ```
 开发框架:SpringBOOt MyBatis MyBatis_Plus
-数据库相关：MySql Druid 
+数据库相关：MySql Druid Redis
 日志系统：logback
 ```
 

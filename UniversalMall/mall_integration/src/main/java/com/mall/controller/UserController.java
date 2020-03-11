@@ -1,7 +1,7 @@
 package com.mall.controller;
 
 
-import com.mall.model.TbUser;
+import com.mall.model.User;
 import com.mall.service.UserService;
 import com.mall.utils.redis.RedisUtil;
 import org.slf4j.Logger;
@@ -34,10 +34,10 @@ public class UserController {
     private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @RequestMapping("getAllUser")
-    public List<TbUser> getAllUsers(){
-        List<TbUser> userList = userService.list();
+    public List<User> getAllUsers(){
+        List<User> userList = userService.list();
         //LOG.info("查询到的数据为"+userList);
-        for (TbUser user:userList
+        for (User user:userList
              ) {
             redisUtil.set(user.getUsername(),user);
         }
@@ -45,7 +45,7 @@ public class UserController {
     }
 
     @RequestMapping("addUser")
-    public Boolean addUser(TbUser user){
+    public Boolean addUser(User user){
         boolean flag = userService.save(user);
         return flag;
     }

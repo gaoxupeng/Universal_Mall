@@ -1,6 +1,6 @@
 package com.mall.service;
 
-import com.mall.model.TbUser;
+import com.mall.model.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author gxp
  * @since 2020-02-19
  */
-public interface UserService extends IService<TbUser> {
+public interface UserService extends IService<User> {
 
 }

@@ -5,10 +5,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 状态枚举
- * @program: dgpoms-server-root
- * @Date: 2018/12/27 11:40
- * @Author: Mr.Zheng
- * @Description:
  */
 public abstract  class Status {
 

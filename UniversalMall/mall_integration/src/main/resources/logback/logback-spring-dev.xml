@@ -33,7 +33,7 @@
 
 
     <!-- root级别 DEBUG -->
-    <root level="info">
+    <root level="debug">
         <!-- 控制台输出 -->
         <appender-ref ref="STDOUT" />
     </root>

@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @author gxp
  * @since 2020-02-19
  */
-public class TbUser implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

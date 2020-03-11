@@ -1,6 +1,6 @@
 package com.mall.service.impl;
 
-import com.mall.model.TbUser;
+import com.mall.model.User;
 import com.mall.dao.UserMapper;
 import com.mall.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2020-02-19
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, TbUser> implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
 }

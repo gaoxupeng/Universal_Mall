@@ -34,7 +34,7 @@
   
     
 
-**mall_integration  ** 的技术栈`相关博客链接教程放在末尾`
+**mall_integration** 的技术栈`相关博客链接教程放在末尾`
 
 ```
 开发框架:SpringBOOt MyBatis MyBatis_Plus
@@ -60,6 +60,13 @@
 
 #### 博客链接
 
+##### SpringBoot相关
+
 [SpingBoot系列教程（一）：整合Mybatis-plus+Druid](https://blog.csdn.net/qq_41142325/article/details/104402129)
 
 [SpingBoot系列教程（二）：SpringBoot+Logback](https://blog.csdn.net/qq_41142325/article/details/104436697)
+
+[SpingBoot系列教程（三）：SpringBoot配置全局异常/自定义异常](https://blog.csdn.net/qq_41142325/article/details/104526545)
+
+[SpingBoot系列教程（四）：SpringBoot+Redis](https://blog.csdn.net/qq_41142325/article/details/104784145)
+

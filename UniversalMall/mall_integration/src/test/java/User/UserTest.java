@@ -2,13 +2,13 @@ package User;
 
 
 import com.mall.controller.UserController;
-import com.mall.model.TbUser;
+import com.mall.model.User;
 
 public class UserTest {
 
     public static void main(String[] args) {
         UserController userController = new UserController();
-        TbUser tbUser = new TbUser();
-        userController.addUser(tbUser);
+        User user = new User();
+        userController.addUser(user);
     }
 }

@@ -14,21 +14,33 @@ public class MongoDbController {
     @Autowired
     private MongoDbDaoImpl mongoDbDao;
 
+    /**
+     * 保存用户信息
+     */
     @RequestMapping("saveUser")
-    public void saveUser(){
-        User user = new User();
+    public void saveUser(User user){
+       /* User user = new User();
         user.setId((long) 1);
         user.setUsername("张三");
-        user.setPassword("123456");
+        user.setPassword("123456");*/
         mongoDbDao.saveUser(user);
     }
 
+    /**
+     * 查询所有用户信息
+     * @return
+     */
     @RequestMapping("findAll")
     public List<User> findAll(){
         return mongoDbDao.findAll();
     }
 
 
+    /**
+     * 根据传入参数查询对应用户
+     * @param username
+     * @return
+     */
     @RequestMapping("findUser")
     public User findUserByUserName(String username){
         User user =  mongoDbDao.findUserByUserName(username);
